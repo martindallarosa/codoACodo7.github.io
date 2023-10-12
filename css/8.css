@@ -1,0 +1,121 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #000957;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+        .header{
+            background: #344CB7;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+            .menu{
+                background: #577BC1;
+                display: flex;
+                flex-flow: row nowrap;
+                height: 100px;
+                align-items: center;
+            }
+                .logo{
+                    background-color: #EBE645;
+                    flex: 1 1 auto;
+                    height: 30px;
+                }
+                .nav{
+                    background-color: #EBE645;
+                    flex: 5 1 auto;
+                    height: 30px;
+                }
+                .social{
+                    background-color: #EBE645;
+                    flex: 1 1 auto;
+                    height: 30px;
+                }
+
+
+
+
+
+        .texto{
+            background-color: #577BC1;
+        }
+        h1{
+            background-color: #EBE645 ;
+        }
+
+
+
+
+        .section{
+            background: #344CB7;
+            display: flex;
+        }
+            .articulos{
+                background-color: #F2F7FF;
+                flex: 2 1 auto;
+                display: flex;
+                flex-flow: row wrap;
+            }
+                .article{
+                    background-color: #0B409C ;
+                    flex: 1 1 40%;
+                }
+                .navegacion{
+                    background-color: #10316B;
+                    flex: 1 1 100%;
+                }
+            .aside{
+                background-color: #FFE867;
+                flex: 1 1 auto;
+            }
+                .publicidad{
+                    background-color: deeppink;
+                }
+
+
+
+
+
+
+
+
+        .footer{
+            background: #344CB7; 
+            display: flex;            
+            justify-content: center;
+        }
+        .pie{
+            background-color: aquamarine;
+            width: 300px;
+            
+        }
+
+        @media all and (max-width: 800px){
+            .section{
+                flex-direction: column;
+            }
+            .menu{
+                flex-direction: column;
+                height: auto;
+            }
+            
+           .aside{
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+        @media all and (max-width: 600px){
+            .articulos{
+                flex-direction: column;
+            }
+        }
+        @media all and (max-width: 600px){
+            .aside{
+            flex-direction: column;
+            }
+        }
