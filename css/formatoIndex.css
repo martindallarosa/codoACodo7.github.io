@@ -3,6 +3,7 @@
     background-color: #333;
     margin: 0;
     padding: 0;
+    
 }
 
 .header{
@@ -10,18 +11,24 @@
     color: #fff;
     text-align: center;
     padding: 20px;
+    
 }
 
 .secciones{
+    display: flex;
+    justify-content: space-evenly;
+   
     padding: 10px ;
-    text-align: center;    
     background-color: #fff;
-    margin: 20px;
+    margin: 1.25em; 
     border: 1px solid #ddd;
     border-radius: 5px;
-}
+}.secciones a{ text-decoration: none; }
 
 .seccion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #fff;
     padding: 20px;
     margin: 20px;
@@ -46,4 +53,40 @@
     margin: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+/*  CARDs PARA LAS SECCIONES */
+
+.card-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en la cuadrícula */
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.card-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.h2Card {
+    font-size: 24px;
+    color: #333;
+}
+
+.imgCard {
+    max-width: 100%;
+    
+    height: auto;
 }
