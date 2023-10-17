@@ -1,0 +1,146 @@
+*{ box-sizing: border-box;}
+
+
+.cuerpo {
+    font-family: Arial, sans-serif;
+    background-color: #6e3d83;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6e3d83;
+    width: 100%;
+    color: #fff;
+
+    & a { text-decoration: none; }
+}
+
+.secciones {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0.625em; 
+    background-color: #6e3d83;
+    margin: 1.25em; 
+    border: 1px solid #ddd; border-radius: 5px;
+    & a { text-decoration: none; color: #f9f9f9; }
+  
+}
+.seccionesJuegos{                                           
+    display: flex;
+    background-color: #6e3d83;
+    padding: 1%; 
+    width: 100%;
+    justify-content: center;
+    border: 1px solid #ddd; border-radius: 5px;
+     & ul{display: flex; width: 100%; justify-content: space-around;}
+     & ul li{ list-style: none;}  
+     & a { text-decoration: none; color: #f9f9f9;  } 
+ }
+.seccion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6e3d83;
+    width: 100%;
+    /* padding: 1.25em;  */
+    /* margin: 1.25em;  */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.main{
+    width: 100%;
+}
+
+.pie {
+    background-color: #532e63;
+    color: #fff;
+    text-align: center;
+    padding: 0.625em; 
+}
+
+.formularios {
+    text-align: center;
+    padding: 0.625em; 
+    background-color: #fff;
+    margin: 1.25em; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* CARDs PARA LAS SECCIONES */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);; 
+    gap: 20px; 
+    max-width: 100%; 
+    padding: 20px; 
+    background-color: #673b7a;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    text-align: center;
+    background-color: #673a7a;
+    border-radius: 5px;
+    border: solid #333 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    text-align: center;
+    padding: 20px; 
+}
+
+.h2Card {
+    font-size: 24px; 
+    color: #ebe6e9;
+}
+
+.imgCard {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 766px) { 
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) { 
+    body {
+        min-width: 20em; 
+    }
+}
+
+ @media (width <= 1025px){
+.card-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+} 
+
+@media (width <= 620px) { 
+    .seccionesJuegos a {
+        margin-right: 1%;
+     
+        font-size: 90%;
+    }
+}
+/* @media (width <= 450px) { 
+    .seccionesJuegos a {
+        margin-right: 100%;
+       
+
+        font-size: 90%;
+    }
+} */
