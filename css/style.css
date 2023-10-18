@@ -17,30 +17,91 @@ body{
     background-color: rgb(28, 21, 61);
     text-align: center;
 }
+label{
+    font-size: 1vw;
+}
 h2{
     margin: 1rem;
 }
 h3{
     margin: 1rem;
 }
+iframe{
+    max-width: 35rem;
+    max-height: 20rem;
+    min-width: 20rem;
+    min-height: 15rem;
+}
+
 
 
 .padre{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /*flex-flow: column nowrap;*/
 }
-    .menu2{
-        display: flex;
-        flex-direction: row;
-    }
+
     .header{
         background: rgb(28, 21, 61);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
     }   
+            .menu1{
+                background: rgb(15, 11, 31);
+                display: flex;
+                flex-direction: row; 
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                margin-bottom: 0.1rem;
+                padding: 0.1rem;
+            }
+
+
+
+                    .menues1{
+                                
+                        height: auto;
+                        margin: 1rem;
+                        margin-right: 1rem;
+                    }
+
+
+
+
+    .menu2{
+        
+        background:rgb(28, 21, 61);
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;   
+        justify-content: center;        
+        height: auto;
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+
+    }
+    
+        .texto-principal{
+            background: rgb(28, 21, 61);
+        }
+
+                .menu3{
+                    background:rgb(28, 21, 61);
+                    display: flex;
+                    flex-direction: row; 
+                    flex-wrap: nowrap;   
+                    justify-content: center;        
+                    height: auto;
+                    margin-bottom: 0.1rem;
+                    margin-top: 0.1rem;
+                }
+                        .menues3{
+                                        
+                            height: auto;
+                            margin: 1rem;
+                            margin-right: 1rem;
+                        }
 
         .categorias{
                 background: rgb(28, 21, 61);
@@ -50,99 +111,143 @@ h3{
                 flex-wrap: nowrap;   
                 justify-content: center;                 
                 margin-bottom: 1rem;
-                
-            
-        }
-        .menu1{
+             }
+                    .menues4{
+                        
+                        height: auto;
+                        margin: 0.1rem;
+                        margin-right: 1.3rem;
+                    }
+
+             .menu5{
+                display: flex;
+                flex-direction: row;
+            }
+                    .section{
+                        background: rgb(28, 21, 61);
+                        display: flex;
+                    }
+                            .articulos{
+                                background:rgb(28, 21, 61);
+                                flex: 1 1 auto;
+                                display: flex;
+                                flex-flow: row wrap;
+                                padding: 1rem;
+                            }
+                                    .article{
+                                        background:rgb(28, 21, 61);
+                                        flex: 1 1 40%;
+                                    }
+                                        .card-content{
+                                            padding: 1rem;
+                                        }
+                                            .imgCard {
+                                                max-width: 40%;    
+                                                height: auto;
+                                            }
+        .aside{
             background: rgb(15, 11, 31);
-            display: flex;
-            flex-direction: row; 
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            margin-bottom: 0.1rem;
-            padding: 0.1rem;
+                                    
+            padding: 1rem;
+            border-radius: 10px;
         }
-        .menu{
-            background:rgb(28, 21, 61);
-            display: flex;
-            flex-direction: row; 
-            flex-wrap: nowrap;   
-            justify-content: center;        
-            height: auto;
-            margin-bottom: 0.1rem;
-            margin-top: 0.1rem;
-        }
+             .publicidad{
+               height: auto;
+               padding-top: 4rem;
+               padding-bottom: 4rem;
+              }                          
+       
+
             .titu{
                 background: rgb(28, 21, 61);
                 height: auto;
                 text-align: center;
                 width: 50%;
             }
-            .menues{
-                
-                height: auto;
-                margin: 1rem;
-                margin-right: 1rem;
-            }
-            .menues1{
-                
-                height: auto;
-                margin: 0.1rem;
-                margin-right: 1.3rem;
-            }
-
-        .texto-principal{
+         
+        .section1{
             background: rgb(28, 21, 61);
-        }
-    .section{
-        background: rgb(28, 21, 61);
-        display: flex;
-    }
-    .section1{
-        background: rgb(28, 21, 61);
-        display: flex;
-        flex-flow: column;   
-        font-size: 1.3vw;
-    }
-        .articulos{
-            background:rgb(28, 21, 61);
-            flex: 1 1 auto;
             display: flex;
-            flex-flow: row wrap;
-            padding: 1rem;
+            flex-flow: column;   
+            font-size: 1.3vw;
         }
-            .article{
-                background:rgb(28, 21, 61);
-                flex: 1 1 40%;
-            }
+        
             .navegacion{
                 background: rgb(28, 21, 61);
                 flex: 1 1 100%;
                 margin: 1rem;
                 padding: 1rem;
             }
-        .aside{
-            background: rgb(15, 11, 31);
 
-            padding: 1rem;
-            border-radius: 10px;
+        
+        .footer {
+            background: rgb(28, 21, 61);
+            display: flex;
+            justify-content: center;
         }
-            .publicidad{
-                height: auto;
-                padding-top: 4rem;
-                padding-bottom: 4rem;
+            .pie{
+                background:rgb(15, 11, 31);
+                width: 100%;
+                margin-top: 1rem;
+                padding-top: 1rem;
             }
-    .footer {
-        background: rgb(28, 21, 61);
+
+    .contactos{
+        background:rgb(28, 21, 61);
         display: flex;
-        justify-content: center;
+        flex-direction: column; 
+        flex-wrap: nowrap;   
+        justify-content: center;        
+        height: auto;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        font-size: 0.9vw !important;
+    }      
+        .menues8{            
+            height: auto;
+            padding: 0.5rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }  
+    .menu7{
+        background:rgb(28, 21, 61);
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;   
+        justify-content: center;        
+        height: auto;
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+        font-size: 1.2vw !important;
     }
-        .pie{
-            background:rgb(15, 11, 31);
-            width: 100%;
-            margin-top: 1rem;
-            padding-top: 1rem;
+        .menu8{
+            background:rgb(28, 21, 61);
+            display: flex;
+            flex-direction: column; 
+            flex-wrap: nowrap;   
+            justify-content: start;  
+            text-align: left;      
+            height: auto;
+            margin-bottom: 0.1rem;
+            margin-top: 0.1rem;
         }
+            .menues7{
+                height: auto;
+                margin: 1rem;
+                margin-right: 1rem;
+            }   
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    padding: 3rem;
+    background-color: rgb(15, 11, 31);
+    align-items: start;
+    text-align: left !important;
+}
+
 
 /*De 601 a 800px*/
 @media all and (max-width: 800px){
@@ -219,10 +324,3 @@ h3{
     }
 }
 
-.imgCard {
-    max-width: 40%;    
-    height: auto;
-}
-.card-content{
-    padding: 1rem;
-}
