@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    background-attachment: none;
+}
+html{
+    font-size:1.6vw;
+}
+body{
+    background-color: rgb(28, 21, 61);
+    text-align: center;
+}
+h2{
+    margin: 1rem;
+}
+h3{
+    margin: 1rem;
+}
+
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*flex-flow: column nowrap;*/
+}
+    .menu2{
+        display: flex;
+        flex-direction: row;
+    }
+    .header{
+        background: rgb(28, 21, 61);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }   
+
+        .categorias{
+                background: rgb(28, 21, 61);
+                height: auto;
+                display: flex;
+                flex-direction: row; 
+                flex-wrap: nowrap;   
+                justify-content: center;                 
+                margin-bottom: 1rem;
+                
+            
+        }
+        .menu1{
+            background: rgb(15, 11, 31);
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            margin-bottom: 0.1rem;
+            padding: 0.1rem;
+        }
+        .menu{
+            background:rgb(28, 21, 61);
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: nowrap;   
+            justify-content: center;        
+            height: auto;
+            margin-bottom: 0.1rem;
+            margin-top: 0.1rem;
+        }
+            .titu{
+                background: rgb(28, 21, 61);
+                height: auto;
+                text-align: center;
+                width: 50%;
+            }
+            .menues{
+                
+                height: auto;
+                margin: 1rem;
+                margin-right: 1rem;
+            }
+            .menues1{
+                
+                height: auto;
+                margin: 0.1rem;
+                margin-right: 1.3rem;
+            }
+
+        .texto-principal{
+            background: rgb(28, 21, 61);
+        }
+    .section{
+        background: rgb(28, 21, 61);
+        display: flex;
+    }
+    .section1{
+        background: rgb(28, 21, 61);
+        display: flex;
+        flex-flow: column;   
+        font-size: 1.3vw;
+    }
+        .articulos{
+            background:rgb(28, 21, 61);
+            flex: 1 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 1rem;
+        }
+            .article{
+                background:rgb(28, 21, 61);
+                flex: 1 1 40%;
+            }
+            .navegacion{
+                background: rgb(28, 21, 61);
+                flex: 1 1 100%;
+                margin: 1rem;
+                padding: 1rem;
+            }
+        .aside{
+            background: rgb(15, 11, 31);
+
+            padding: 1rem;
+            border-radius: 10px;
+        }
+            .publicidad{
+                height: auto;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+    .footer {
+        background: rgb(28, 21, 61);
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background:rgb(15, 11, 31);
+            width: 100%;
+            margin-top: 1rem;
+            padding-top: 1rem;
+        }
+
+/*De 601 a 800px*/
+@media all and (max-width: 800px){
+/*El aside debe pasar hacia abajo*/
+    .section{
+        flex-direction: column;
+    }
+/*Los elementos del menu deben mostrarse uno debajo del otro*/
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+/*Los elementos del aside se deben mostrar uno al lado del otro*/
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    .categorias{
+        flex-direction: column;
+    }
+    .publicidad{
+        height: auto;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .article{
+        background:rgb(28, 21, 61);
+        flex: 1 1 40%;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+/*De 401 a 600px*/
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+    .categorias{
+        flex-direction: column;
+    }
+    .menu2{
+        display: flex;
+        flex-direction: column;
+    }
+    .publicidad{
+        height: auto;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .article{
+        background:rgb(28, 21, 61);
+        flex: 1 1 40%;
+        margin-bottom: 1rem;    
+    }
+}
+
+/*De 0 a 400px*/
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+    .categorias{
+        flex-direction: column;
+    }
+    .menu2{
+        display: flex;
+        flex-direction: column;
+    }
+    .publicidad{
+        height: auto;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.imgCard {
+    max-width: 40%;    
+    height: auto;
+}
+.card-content{
+    padding: 1rem;
+}
