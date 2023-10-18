@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    transition: 0.5%;
+    z-index: 1000;
+}
+
+/* header .logo{
+    minuto 7.50
+} */
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background: #1aeeef;
+    color: black;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+header .action .searchBX{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+
+header .action .searchBX i{
+    font-size: 1.5em;
+    margin: 5px;
+    color: #222;
+}
+
+header .action .searchBX input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+
+.games{
+    padding:0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+
+}
+
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.games ul li.active{
+    background: #1aeeef;
+    color: black;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+
+.games .cardBx {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con igual ancho */
+    gap: 20px; /* Espacio entre las tarjetas de juego */
+  }
+  
+  /* Ajusta el estilo de cada tarjeta de juego */
+  .api-game-card {
+    width: 100%;
+    border-radius: 10px;
+    background: #1b1141;
+    overflow: hidden;
+
+  }
+  
+  .api-game-card img {
+
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .api-game-card .content {
+    padding: 10px;
+  }
+  
+  .api-game-card .content h1 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .api-game-card .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #35407e;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .api-game-card .progress-line span {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aeeef;
+    box-shadow: 0 0 10px #1aeeef;
+    transform-origin: left;
+  }
+
+
+  @media (max-width: 768px) {
+    /* Redefine los estilos del encabezado para ocupar menos espacio */
+    header {
+      padding: 5px 20px;
+    }
+    header .nav {
+      display: none; /* Oculta la navegación principal en tabletas y teléfonos */
+    }
+    header .action .searchBX {
+      padding: 5px;
+      margin: 5px;
+    }
+  
+    /* Ajusta el estilo de la tarjeta de juego para que se adapte a pantallas más pequeñas */
+    .api-game-card {
+      width: 100%; /* Ocupará todo el ancho disponible */
+    }
+  }
+  
+  /* Estilos para pantallas aún más pequeñas, como teléfonos */
+  @media (max-width: 480px) {
+    header {
+      padding: 5px 10px;
+    }
+    .banner .content {
+      font-size: 14px;
+    }
+  }
