@@ -14,9 +14,8 @@ async function fetchAndDisplayGames() {
       const gameCard = document.createElement('div');
       gameCard.classList.add('card', 'api-game-card');
 
-      // const gameContainerImage = document.createElement('div');
       const gameImage = document.createElement('img');
-      gameImage.classList.add('card-image');
+      gameImage.classList.add('card-image'); // Agrega una clase CSS a la imagen
       gameImage.src = game.background_image;
       gameImage.alt = game.name;
 

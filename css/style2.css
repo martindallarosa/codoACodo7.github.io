@@ -20,7 +20,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
+    background: rgb(146, 46, 240);
     transition: 0.5%;
     z-index: 1000;
 }
@@ -34,7 +34,13 @@ header .nav{
     justify-content: center;
     align-items: center;
 }
+.logoContainer{ display: flex;
+      width: 10%;
+      height: 3em;
+     
+    & img{ max-width: 100%; object-fit: cover;}
 
+    }
 header ul li{
     list-style: none;
     margin: 10px;
@@ -76,8 +82,10 @@ header .action .searchBX input{
     color: #222;
 }
 
+main{  margin-top: 10%;}
+
 .games{
-    padding:0px 100px;
+    padding:0px 10%;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -122,6 +130,24 @@ header .action .searchBX input{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con igual ancho */
     gap: 20px; /* Espacio entre las tarjetas de juego */
+    & h1{
+      color: #ffffff;text-align: center;
+      font-size: large;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 1.5;
+      max-height: 3em;
+    } 
+    & p{
+      color: #1aeeef;text-align: center;
+      font-size: large;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      line-height: 1.5;
+      max-height: 3em;
+    } 
   }
   
   /* Ajusta el estilo de cada tarjeta de juego */
@@ -130,15 +156,14 @@ header .action .searchBX input{
     border-radius: 10px;
     background: #1b1141;
     overflow: hidden;
-
   }
   
   .api-game-card img {
-
     height: auto;
     object-fit: cover;
     max-width: 100%;
     height: auto;
+    
   }
   
   .api-game-card .content {
@@ -170,9 +195,14 @@ header .action .searchBX input{
     box-shadow: 0 0 10px #1aeeef;
     transform-origin: left;
   }
+  .card-image {
+    width: 100%; /* Establece el ancho deseado */
+    height: 150px; /* Establece la altura deseada */
+    object-fit: cover; /* Opcional: para recortar o ajustar las imágenes */
+  }
+  
 
-
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     /* Redefine los estilos del encabezado para ocupar menos espacio */
     header {
       padding: 5px 20px;
@@ -199,4 +229,33 @@ header .action .searchBX input{
     .banner .content {
       font-size: 14px;
     }
+  }
+
+  @media (width < 800px){
+    .games .cardBx {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  @media (width <= 540px){
+    .games .cardBx {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+  }
+
+
+  /*a partir de este Punto nada mas se achica*/
+  @media (width <= 400px) {
+    body {
+        min-width: 320px; 
+      }
+  }
+
+  /*a partir de aca la barra de busqueda queda piola*/
+  @media (width <= 450px) {
+    
+    input{display: none;}
+  }
+  @media (width <= 490px) {
+
+    ul {flex-direction: column; width: 100%;}
   }
