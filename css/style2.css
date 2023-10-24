@@ -34,7 +34,8 @@ header .nav{
     justify-content: center;
     align-items: center;
 }
-.logoContainer{ display: flex;
+.logoContainer{ 
+      display: flex;
       width: 10%;
       height: 3em;
      
@@ -278,18 +279,38 @@ main{  margin-top: 10%;}
     /* Redefine los estilos del encabezado para ocupar menos espacio */
     header {
       padding: 5px 20px;
+      margin-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 7rem;
+
     }
     header .nav {
-      display: none; /* Oculta la navegación principal en tabletas y teléfonos */
+      display: flex;
+      flex-direction: column; /* Oculta la navegación principal en tabletas y teléfonos */
     }
     header .action .searchBX {
       padding: 5px;
       margin: 5px;
     }
+    .main1{
+      margin-top: 7rem;
+      padding-top: 7rem;
+    }
+    .cabeza1{
+      margin-bottom: 7rem;
+    }
   
     /* Ajusta el estilo de la tarjeta de juego para que se adapte a pantallas más pequeñas */
     .api-game-card {
+      margin-top: 7rem;
       width: 100%; /* Ocupará todo el ancho disponible */
+    }
+    .games{
+      display: flex;
+      flex-direction: column;
+      margin-top: 7rem;
+      margin-bottom: 7rem;
     }
   }
   
@@ -301,12 +322,14 @@ main{  margin-top: 10%;}
     .banner .content {
       font-size: 14px;
     }
+    
   }
 
   @media (width < 800px){
     .games .cardBx {
         grid-template-columns: repeat(2, 1fr); 
     }
+    
   }
   @media (width <= 540px){
     .games .cardBx {
@@ -330,4 +353,9 @@ main{  margin-top: 10%;}
   @media (width <= 490px) {
 
     ul {flex-direction: column; width: 100%;}
+    .nav{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
   }
