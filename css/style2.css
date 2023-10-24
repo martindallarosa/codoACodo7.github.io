@@ -360,3 +360,112 @@ main{  margin-top: 10%;}
       height: auto;
     }
   }
+
+  .youtube{
+    padding:0px 10%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  }
+  .flexbox-container > div {
+  width: 50%;
+  padding: 10px;
+  }
+  
+  .flexbox-container > div:first-child {
+  margin-right: 20px;
+  }
+
+  .montly{
+    color: white;
+  }
+
+  h5{
+    color: white;
+  }
+
+
+  /* Carrousel */
+  .carousel {
+    position: relative;
+  }
+  .carousel	input {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    margin: 0;
+  }
+  .carousel input:before {
+    position: absolute;
+    content: "<";
+  }
+  input:checked ~ input:before {
+    content: ">";
+  }
+  input:checked {
+    display: none;
+  }
+  input:checked ~ input {
+    right: 0;
+    left: auto;		
+  }
+  input:checked + div + input {
+    z-index: 4;
+  }
+  input + div {
+    position: absolute;
+    z-index: 1;
+  }  
+  input:checked + div {
+    z-index: 2;
+  }  
+  
+  .carousel {
+    width: 980px;
+    height: 500px;
+    margin: 2em auto;
+    overflow:hidden;
+    transform: translateZ(0px);
+    box-shadow: 0 0 2px 1px #ccc;
+  }
+  .carousel	input {
+    top: 240px;
+    width: 60px;
+    height: 60px;
+    left: 10px;
+  }
+  input:checked ~ input {
+    right: 10px;	
+  }
+  .carousel input:before {
+    background: #888;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 5px solid #fff;
+  }
+  
+  #carousels input + div {
+    transform: translate3d(-100%,0,0);
+    transition: transform .5s ease-in-out;
+  }
+  #carousels input:checked + div {
+    transform: translate3d(0,0,0);
+  }
+  #carousels input:checked + div ~ div {
+    transform: translate3d(100%,0,0);
+  }
