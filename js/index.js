@@ -34,4 +34,21 @@ let footer = `
 `
 document.getElementById("idfooter").innerHTML = footer
 
+function registrar(){
+    let nombre = document.getElementsByName("usuario")[0].value
+    let clave = document.getElementsByName("clave")[0].value
+    let mail = document.getElementsByName("mail")[0].value
+
+
+    if(nombre == "" || clave == "" || mail == ""){
+        document.getElementById("user").textContent = `Falta rellenar campos obligatorios.(Email, Usuario y Clave)`
+    }
+    else{
+        document.getElementById("user").textContent = `Gracias ${nombre} su clave es ${clave}. Le enviaremos un correo a la casilla ${mail} para confirmar los datos.`
+    }
+}
+
+function resetear(){
+    document.getElementById("user").reset()
+}
 

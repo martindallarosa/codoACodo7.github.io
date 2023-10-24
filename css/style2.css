@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 body{
@@ -234,7 +235,6 @@ main{  margin-top: 10%;}
                                 height: auto;
                                 margin-left: 4rem;
                                 margin-right: 4rem;
-                                font-size: 0.9vw !important;
                             }      
                                 .menues8{            
                                     height: auto;
@@ -266,9 +266,20 @@ main{  margin-top: 10%;}
                                   }
                                       .menues7{
                                           height: auto;
-                                          margin: 1rem;
-                                          margin-right: 1rem;
+                                          margin: 1rem;                                       
+                                          font-size: 2vw !important;
                                       }   
+                                      .formu{
+                                        display: flex;
+                                        flex-direction: column;
+                                        
+                                      }
+                                      .formus{
+                                        margin: 0.5rem;
+                                      }
+                                      .formus1{
+                                        margin: 0.5rem;
+                                      }
   
 
   @media (max-width: 800px) {
@@ -305,6 +316,21 @@ main{  margin-top: 10%;}
       margin-top: 1rem;
       padding-top: 1rem;
   }
+  .menu7{
+    background:blueviolet;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap;   
+    justify-content: center;        
+    height: auto;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    font-size: 1.2vw !important;
+}
+.menues7{
+  font-size: 2vw !important;
+  text-align: center;
+}
 }
   
   /* Estilos para pantallas aún más pequeñas, como teléfonos */

@@ -21,41 +21,55 @@
 
     <div class="formularios"> 
         <h4 class="secciones" >Registar Usuario</h4>
-    <form action="" method="" class="formu">        
-        
-
-            <label for="">Usuario:</label> <input size="10" type="text" name="usuario" required> <br><br>
-
-            <label for="">Mail:</label> <input size="10" type="email" name="mail" required> <br><br>
-
-            <label for="">Clave:</label> <input size="10" type="password" name="clave" required> <br><br>
-
-            <label for="">Nombre:</label> <input size="10" type="text" name="nombre" placeholder="Ingrese su nombre aqui" > <br><br>
-
-            <label for="">Apellido:</label> <input size="10" type="text" name="apellido" placeholder="Ingrese su apellido aqui" > <br><br>
-
-        
         <br>
+    <form action="" method="" class="formu">        
 
-     
-        <label for="">Direccion:</label> <input size="10" type="text" name="direc" placeholder="Ingrese su dirección aqui"> <br><br>
-
-        <label for="">Numero:</label> <input size="10" type="text" name="numero" placeholder="Ingrese el numero"> <br><br>
-
-        <label for="">Ciudad:</label> <input size="10" type="text" name="ciudad" value="Buenos Aires"> <br><br>
-
-        <label for="">Código Postal:</label> <input size="10" type="text" name="codPostal" placeholder="Ingrese su codigo postal aqui"><br> <br>
-
-        <label for="">Telefono:</label> <input size="10" type="tel" name="telefono" placeholder="ingrese su telefono aqui"> <br><br>
-            
-        <label for="">Fecha Nac.(mm/dd/yyyy):</label> <input size="10" type="date" name="fecha"> <br><br>
-
-        
-        <input type="submit" value="Enviar">
-        <button type="reset">Reset</button>
+                <div class="formus">
+                    <label for="">Mail:</label><br> <input size="10" type="email" name="mail" >
+                </div>
+                <div class="formus">
+                    <label for="">Usuario:</label><br> <input size="10" type="text" name="usuario">
+                </div>
+                <div class="formus">
+                    <label for="">Clave:</label><br> <input size="10" type="password" name="clave" > 
+                </div>
+                <div class="formus">
+                    <label for="">Nombre:</label><br> <input size="10" type="text" name="nombre" placeholder="Ingrese su nombre aqui" > 
+                </div>
+                <div class="formus">
+                    <label for="">Apellido:</label><br> <input size="10" type="text" name="apellido" placeholder="Ingrese su apellido aqui" >
+                </div>
+                <div class="formus">
+                    <label for="">Direccion:</label><br> <input size="10" type="text" name="direc" placeholder="Ingrese su dirección aqui"> 
+                </div>
+                <div class="formus">
+                    <label for="">Numero:</label><br> <input size="10" type="text" name="numero" placeholder="Ingrese el numero"> 
+                </div>
+                <div class="formus">
+                    <label for="">Ciudad:</label><br> <input size="10" type="text" name="ciudad" value="Buenos Aires"> 
+                </div>
+                <div class="formus">
+                    <label for="">Código Postal:</label><br> <input size="10" type="text" name="codPostal" placeholder="Ingrese su codigo postal aqui">
+                </div>
+                <div class="formus">
+                    <label for="">Telefono:</label><br> <input size="10" type="tel" name="telefono" placeholder="ingrese su telefono aqui">
+                </div>
+                <div class="formus">  
+                    <label for="">Fecha Nac.(mm/dd/yyyy):</label><br> <input size="10" type="date" name="fecha"> 
+                </div>  
+                <div class="formus">
+                    <label for="">Aceptar terminos y condiciones:</label> <input type="checkbox" name="terminos">
+                </div>
+                <div class="formus1">
+        <button onclick="registrar()" type="button">Registrar</button>
+        <button onclick="resetear()" type="button">Resetear</button>
+                </div>
+        <span>
+            <h4 id="user"></h4>
+        </span>   
     </div>   
-        <br><br>
-
+        
+<br><br><br>
     </form>
 
     <footer class="pie" id="idfooter">
