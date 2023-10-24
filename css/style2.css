@@ -12,17 +12,13 @@ body{
 }
 
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 7px 80px;
+    padding: 1rem 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgb(146, 46, 240);
     transition: 0.5%;
-    z-index: 1000;
 }
 
 /* header .logo{
@@ -278,27 +274,20 @@ main{  margin-top: 10%;}
   @media (max-width: 800px) {
     /* Redefine los estilos del encabezado para ocupar menos espacio */
     header {
-      padding: 5px 20px;
+      padding: 1rem 2rem;
       margin-bottom: 5rem;
       display: flex;
       flex-direction: column;
-      margin-bottom: 7rem;
+      margin-bottom: 1rem;
 
     }
     header .nav {
       display: flex;
-      flex-direction: column; /* Oculta la navegación principal en tabletas y teléfonos */
+      flex-direction: column; 
     }
     header .action .searchBX {
-      padding: 5px;
-      margin: 5px;
-    }
-    .main1{
-      margin-top: 7rem;
-      padding-top: 7rem;
-    }
-    .cabeza1{
-      margin-bottom: 7rem;
+      padding: 1rem;
+      margin: 1rem;
     }
   
     /* Ajusta el estilo de la tarjeta de juego para que se adapte a pantallas más pequeñas */
@@ -309,18 +298,22 @@ main{  margin-top: 10%;}
     .games{
       display: flex;
       flex-direction: column;
-      margin-top: 7rem;
-      margin-bottom: 7rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
+    .formularios {
+      margin-top: 1rem;
+      padding-top: 1rem;
   }
+}
   
   /* Estilos para pantallas aún más pequeñas, como teléfonos */
   @media (max-width: 480px) {
     header {
-      padding: 5px 10px;
+      padding: 1rem 2rem;
     }
     .banner .content {
-      font-size: 14px;
+      font-size: 1rem;
     }
     
   }
@@ -329,6 +322,14 @@ main{  margin-top: 10%;}
     .games .cardBx {
         grid-template-columns: repeat(2, 1fr); 
     }
+    .main1{
+      margin-top: 7rem;
+      padding-top: 7rem;
+    }
+    .cabeza1{
+      margin-bottom: 7rem;
+    }
+  
     
   }
   @media (width <= 540px){
