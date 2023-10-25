@@ -1,4 +1,6 @@
-const API_KEY = "16504e7d787446209e0d069409a01fde";
+let numero = Math.floor(Math.random() * 1000) + 1;
+
+const API_KEY = "16504e7d787446209e0d069409a01fde&page=" + numero;
 
 // Función para hacer la solicitud a la API y mostrar juegos
 async function fetchAndDisplayGames() {

@@ -3,7 +3,7 @@ let header = `
                 
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="noticias.html">Juegos</a></li>
             <li><a href="sobreNosotros.html">Contacto</a></li>
             <li><a href="formularioCuenta.html">Registro</a></li>
         </ul>
