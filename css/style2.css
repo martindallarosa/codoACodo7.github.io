@@ -444,10 +444,27 @@ main{  margin-top: 10%;}
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
-    .formularios {
-      margin-top: 1rem;
-      padding-top: 1rem;
-  }
+    
+      .formulariosCaja{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .formularios{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        background-color: rgb(146, 46, 240);
+        align-items:start;
+        text-align: left !important;
+    }
+    .formus{
+      margin: 0.1rem;
+    }
   .menu7{
     background:blueviolet;
     display: flex;
@@ -464,15 +481,40 @@ main{  margin-top: 10%;}
   text-align: center;
 }
 .carousel{
-  width: 30rem;
-    height: 20rem;
+    width: 15rem; /* Establece el ancho deseado */
+    height: 150px; /* Establece la altura deseada */
+    object-fit: cover; /* Opcional: para recortar o ajustar las imágenes */
+ 
 }
 .ifra{
-  display: flex;
-  justify-content: left;
-  align-items: start;
-  width: 300rem;
+    width: 100%; /* Establece el ancho deseado */
+    height: 15rem; /* Establece la altura deseada */
+    object-fit: cover; /* Opcional: para recortar o ajustar las imágenes */
+    margin-bottom: 7rem;
+    margin-top: 7rem;
+}
+.imagen{
   
+  width: 100%; /* Establece el ancho deseado */
+  height: 150px; /* Establece la altura deseada */
+  /* Opcional: para recortar o ajustar las imágenes */
+}
+.menues8{       
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}  
+.montly{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  justify-content: left;
+}
+.flexbox-container{  
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 }
   
@@ -518,7 +560,6 @@ main{  margin-top: 10%;}
   /*a partir de aca la barra de busqueda queda piola*/
   @media (width <= 450px) {
     
-    input{display: none;}
   }
   @media (width <= 490px) {
 
