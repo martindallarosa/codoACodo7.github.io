@@ -24,11 +24,12 @@ async function fetchAndDisplayGames() {
       gameTitle.textContent = game.name;
 
       const pricing = document.createElement('p');
-      pricing.innerHTML = `Pricing <br> <span>${game.price}</span>`;
+      pricing.innerHTML = `Precio <br> <span>${game.id} $</span>`;
 
       const playNowLink = document.createElement('a');
       playNowLink.href = game.website;
-      playNowLink.textContent = "Play Now";
+      playNowLink.textContent = "Jugar Ahora";
+      playNowLink.innerHTML = `<p>Jugar</p> <br>`
 
       gameCard.appendChild(gameImage);
       gameCard.appendChild(gameTitle);

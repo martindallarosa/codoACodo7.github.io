@@ -25,7 +25,7 @@
     <form action="" method="" class="formu">        
 
                 <div class="formus">
-                    <label for="">Mail:</label><br> <input style="color: black;" size="10" type="email" name="mail" >
+                    <label for="">Mail:</label><br> <input style="color: black;" size="10" type="email" name="mail" id="usuario" >
                 </div>
                 <div class="formus">
                     <label for="">Usuario:</label><br> <input style="color: black;" size="10" type="text" name="usuario">
@@ -46,7 +46,7 @@
                     <label for="">Numero:</label><br> <input style="color: black;" size="10" type="text" name="numero" placeholder="Ingrese el numero"> 
                 </div>
                 <div class="formus">
-                    <label for="">Ciudad:</label><br> <input style="color: black;" size="10" type="text" name="ciudad" value="Buenos Aires"> 
+                    <label for="">Ciudad:</label><br> <input style="color: black;" size="10" type="text" name="ciudad" placeholder="Buenos Aires" value="Buenos Aires"> 
                 </div>
                 <div class="formus">
                     <label for="">Código Postal:</label><br> <input style="color: black;" size="10" type="text" name="codPostal" placeholder="Ingrese su codigo postal aqui">
@@ -58,11 +58,13 @@
                     <label for="">Fecha Nac.(mm/dd/yyyy):</label><br> <input style="color: black;" size="10" type="date" name="fecha"> 
                 </div>  
                 <div class="formus">
-                    <label for="">Aceptar terminos y condiciones:</label> <input style="color: black;" type="checkbox" name="terminos">
+                    <label for="">Aceptar terminos y condiciones:</label> <input type="checkbox" id="terminos" name="terminos" >
                 </div>
                 <div class="formus1">
-        <button style="color: black;" onclick="registrar()" type="button">Registrar</button>
-        <button style="color: black;" onclick="resetear()" type="button">Resetear</button>
+                    
+                    <button style="color: black;" onclick="resetear()" type="button">Resetear</button>
+                    <button style="color: black;" onclick="registrar()" type="button">Registrar</button>
+        
                 </div>
         <span>
             <h4 id="user"></h4>
