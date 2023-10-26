@@ -11,6 +11,7 @@
 body{
     background-color: blueviolet;
 }
+main{margin-top: 100px;}
 
 header{
     width: 100%;
@@ -28,8 +29,10 @@ header{
 
 header{
   position: fixed;
-  z-index: 10000;
+  z-index: 100;
+  top: 0;
 }
+
 
 header .nav{
     display: flex;
@@ -90,7 +93,7 @@ header .action .searchBX input{
     color: #222;
 }
 
-main{  margin-top: 1%;}
+main{  margin-top: 10%;}
 
 .games{
     padding:0px 10%;
