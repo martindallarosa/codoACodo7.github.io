@@ -1,8 +1,8 @@
 let header = `
-        <div class="logoContainer">   <img src="logo.webp"></div>
+        <div class="logoContainer">   <a href="index.html"><img src="logo.webp"></div></a>
                 
         <ul class="nav">
-            <li><a href="index.html">Home</a></li>
+            <li class="liHome"><a href="index.html">Home</a></li>
             <li><a href="noticias.html">Juegos</a></li>
             <li><a href="sobreNosotros.html">Contacto</a></li>
             <li><a href="formularioCuenta.html">Registro</a></li>

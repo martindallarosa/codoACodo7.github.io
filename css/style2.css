@@ -16,7 +16,7 @@ header{
     width: 100%;
     padding: 1rem 7rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: rgb(146, 46, 240);
     transition: 0.5%;
@@ -26,17 +26,27 @@ header{
     minuto 7.50
 } */
 
+header{
+  position: fixed;
+  z-index: 10000;
+}
+
 header .nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 }
 .logoContainer{ 
-      display: flex;
+      display: flex; 
+      padding-left: 1.5%;
       width: 10%;
+      max-width: 10%;
+      min-width: 4.7em;
       height: 3em;
      
-    & img{ max-width: 100%; object-fit: cover;}
+    & img{ max-width: 200%; width: 150%; height: 100%; object-fit: cover; }
 
     }
 header ul li{
@@ -416,12 +426,13 @@ main{  margin-top: 1%;}
 
   @media (max-width: 800px) {
     /* Redefine los estilos del encabezado para ocupar menos espacio */
-    header {
+    /* header {
       padding: 1rem 2rem;
       margin-bottom: 5rem;
       display: flex;
       flex-direction: column;
       margin-bottom: 1rem;
+      & .logoContainer {display: none;}
 
     }
     header .nav {
@@ -429,10 +440,19 @@ main{  margin-top: 1%;}
       flex-direction: column; 
     }
     header .action .searchBX {
+      
       padding: 1rem;
       margin: 1rem;
+    } */
+    header{
+      width: 100%;
     }
-  
+    .action{
+      width: 30%;
+      & input{ width: 30%}
+    
+    
+    }
     /* Ajusta el estilo de la tarjeta de juego para que se adapte a pantallas más pequeñas */
     .api-game-card {
       margin-top: 7rem;
@@ -517,11 +537,14 @@ main{  margin-top: 1%;}
   width: 100%;
 }
 }
+
   
   /* Estilos para pantallas aún más pequeñas, como teléfonos */
   @media (max-width: 480px) {
     header {
+      position: relative;
       padding: 1rem 2rem;
+      & nav{}
     }
     .banner .content {
       font-size: 1rem;
@@ -560,8 +583,19 @@ main{  margin-top: 1%;}
   @media (width <= 450px) {
     
   }
-  @media (width <= 490px) {
 
+  /* Arreglo del Nav resposive, que antes estaba BIEN! */
+@media (width <= 650px) {
+  .liHome{
+    display: none;
+  }
+  
+  .nav{
+    & li{ margin: 2%;}
+  }
+  }
+  @media (width <= 490px) {
+    header{position: relative;}
     ul {flex-direction: column; width: 100%;}
     .nav{
       flex-direction: column;
