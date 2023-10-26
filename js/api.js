@@ -19,6 +19,7 @@ async function fetchAndDisplayGames() {
       // const gameContainerImage = document.createElement('div');
       const gameImage = document.createElement('img');
       gameImage.classList.add('card-image');
+      gameImage.setAttribute('loading', 'lazy');
       gameImage.src = game.background_image;
       gameImage.alt = game.name;
 
