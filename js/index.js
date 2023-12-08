@@ -6,6 +6,7 @@ let header = `
             <li><a href="noticias.html">Juegos</a></li>
             <li><a href="sobreNosotros.html">Contacto</a></li>
             <li><a href="formularioCuenta.html">Registro</a></li>
+            <li><a href="https://gametify1.netlify.app/">Admin</a></li>
         </ul>
         <div class="action">
             <div class="searchBX">
